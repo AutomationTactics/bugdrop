@@ -105,12 +105,13 @@ directory = "public"
 binding = "ASSETS"
 
 [env.production.vars]
-# Optional exact repository allowlist (unset allows all installed repositories).
-# ALLOWED_REPOSITORIES = "example-org/app,example-org/feedback"
 ENVIRONMENT = "production"
-ALLOWED_ORIGINS = "*"
-GITHUB_APP_NAME = "neonwatty-bugdrop"
+ALLOWED_ORIGINS = "https://icc.primusbuilders.com"
+ALLOWED_REPOSITORIES = "PrimusBuildersDev/command-center"
+AUTH_TOKEN_REQUIRED_FOR_CHECK = "true"
+GITHUB_APP_NAME = "at-bug-reporting"
 MAX_SCREENSHOT_SIZE_MB = "5"
+ROOT_REDIRECT_URL = "https://icc.primusbuilders.com/"
 BUGDROP_BOARD_TENANT_ID = "tenant_mean_weasel"
 BUGDROP_BOARD_APP_ID = "app_mean_weasel_bugdrop_dogfood"
 FEEDBACK_COUNT_BASELINE = "3116"
